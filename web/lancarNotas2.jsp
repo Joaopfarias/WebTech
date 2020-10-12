@@ -59,7 +59,13 @@
         <script>
             window.onload = function () {
 
+                txtn1 = document.getElementById("txtn1");
+                txtn2 = document.getElementById("txtn2");
+                txtn3 = document.getElementById("txtn3");
                 txtn4 = document.getElementById("txtn4");
+                txtn1.onkeyup = funcao1;
+                txtn2.onkeyup = funcao1;
+                txtn3.onkeyup = funcao1;
                 txtn4.onkeyup = funcao1;
                 txtaf = document.getElementById("txtaf");
                 txtaf.onkeyup = funcao2;

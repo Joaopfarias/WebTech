@@ -136,9 +136,11 @@ public final class listaAlunos_jsp extends org.apache.jasper.runtime.HttpJspBase
                 for (int num = 0; num < lista.size(); num++) {
                     out.print("<tr>");
                     out.print("<td>" + lista.get(num).getRGM() + "</td>");
-                    out.print("<td><a href='lancarNotas2.jsp?RGM=" + lista.get(num).getRGM() + ""
-                            + "&NOME=" + lista.get(num).getNome() + ""
-                            + "&CURSO=" + lista.get(num).getCurso() + ">" + lista.get(num).getNome() + "</a></td>");
+                    out.print("<td><a href='lancarNotas2.jsp?RGM=" + lista.get(num).getRGM()
+                            + "&NOME=" + lista.get(num).getNome()
+                            + "&CURSO=" + lista.get(num).getCurso() + "'>"
+                            + lista.get(num).getNome() + "</a></td>"
+                    );
                     out.print("<td>" + lista.get(num).getEmail() + "</td>");
                     out.print("<td>" + lista.get(num).getCurso() + "</td>");
                     out.print("</tr>");
